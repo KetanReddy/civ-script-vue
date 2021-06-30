@@ -46,6 +46,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.name !== 'start' && store.getters['players'].length === 0) next({ name: 'start' })
+  if (to.name === 'death' && store.getters['deathPicks'].length === 0) next({ name: 'final' })
   else next()
 })
 

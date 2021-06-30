@@ -60,7 +60,7 @@
           <td>
             <button
               class="button is-success"
-              :disabled="player.deathPick || player.finalPick !== null"
+              :disabled="player.deathPick || player.finalPick !== null || !playerPicks[player.id]"
               @click="makeSelection(player.id)"
             >
               Confirm Selection
@@ -69,9 +69,20 @@
         </tr>
       </tbody>
     </table>
-    <router-link to="/death">
+    <router-link
+      v-if="deathPicks.length > 0"
+      to="/death"
+    >
       <button class="button is-primary">
         Death Picks
+      </button>
+    </router-link>
+    <router-link
+      v-else
+      to="/final"
+    >
+      <button class="button is-primary">
+        See Results
       </button>
     </router-link>
   </div>
@@ -93,6 +104,7 @@ export default defineComponent({
   computed: {
     ...mapGetters([
       'players',
+      'deathPicks'
     ])
   },
   data(): State {
@@ -110,7 +122,7 @@ export default defineComponent({
       const playerChoice: Civ|string = this.playerPicks[playerId]
       if (typeof playerChoice === 'object'){
         this.makePick({targetPlayer:playerId, civChoice: playerChoice})
-      } else {
+      } else if (typeof playerChoice === 'string') {
         this.markDeathPick(playerId)
       }
     }
