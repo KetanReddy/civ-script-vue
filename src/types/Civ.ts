@@ -1,5 +1,13 @@
 export class Civ {
-    constructor(civName: string,civAbility: string, civUniqueUnit: string, civUniqueInfrastructure: string, leaderName: string, leaderBonus: string, leaderUniqueUnit: string){
+    constructor(
+      civName: string,
+      civAbility: string, 
+      civUniqueUnit: string, 
+      civUniqueInfrastructure: string, 
+      leaderName: string, 
+      leaderBonus: string, 
+      leaderUniqueUnit: string,
+      dlcPack: number){
         this.civName = civName
         this.civAbility = civAbility
         this.civUniqueUnit = civUniqueUnit
@@ -7,6 +15,7 @@ export class Civ {
         this.leaderName = leaderName
         this.leaderBonus = leaderBonus
         this.leaderUniqueUnit = leaderUniqueUnit
+        this.dlcPack = dlcPack
     }
     civName: string;
     civAbility: string;
@@ -15,6 +24,7 @@ export class Civ {
     leaderName: string;
     leaderBonus: string;
     leaderUniqueUnit: string;
+    dlcPack: number;
 };
 
 export const CivList: Array<Civ> = [
@@ -25,7 +35,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Film Studio",
         leaderName: "Teddy Roosevelt (Bull Moose)",
         leaderBonus: "Breathtaking tiles gain +2 Science Science when adjacent to a Natural Wonder or Mountain, and +2 Culture Culture when adjacent to a Wonder or Woods. +1 Appeal in all tiles in cities with a National Park.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "America",
@@ -34,7 +45,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Film Studio",
         leaderName: "Teddy Roosevelt (Rough Rider)",
         leaderBonus: "+5 Strength Combat Strength for all units inside America's home continent. Envoy Envoys sent to city-states that America has a Trade Routes Trade Route with count as two Envoy Envoys. Gain the Rough Rider unique unit with Rifling.",
-        leaderUniqueUnit: "Rough Rider"
+        leaderUniqueUnit: "Rough Rider",
+        dlcPack: 0
       },
       {
         civName: "Arabia",
@@ -43,7 +55,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Madrasa",
         leaderName: "Saladin",
         leaderBonus: "The Worship building for Arabia's Religion is 90% cheaper to purchase with Faith Faith. Arabian cities with that building gain +10% Science Science, Faith Faith, and Culture Culture.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Australia",
@@ -52,7 +65,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Outback Station",
         leaderName: "John Curtin ",
         leaderBonus: "+100% Production Production in all cities for the next 10 turns after being declared war upon or liberating a city.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 3
       },
       {
         civName: "Aztec",
@@ -61,7 +75,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Tlachtli",
         leaderName: "Montezuma",
         leaderBonus: "Improved Luxury resources provide an Amenity Amenity to 2 extra cities. +1 Strength Combat Strength for all units for each different improved Luxury resource in Aztec territory.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 1
       },
       {
         civName: "Babylon",
@@ -70,7 +85,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Palgum",
         leaderName: "Hammurabi",
         leaderBonus: "Upon building each type of specialty district, except the Government Plaza, for the first time, instantly receive the building with the lowest Production Production cost that can be built in that district. Upon building any other district for the first time, receive a free Envoy Envoy.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 10
       },
       {
         civName: "Brazil",
@@ -79,7 +95,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Street Carnival, Copacabana",
         leaderName: "Pedro II",
         leaderBonus: "Recruiting or patronizing a Great Person Great Person refunds 20% of their point cost.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Byzantium",
@@ -88,7 +105,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Hippodrome",
         leaderName: "Basil II",
         leaderBonus: "Heavy and light cavalry units deal full damage when attacking cities following the same Religion as Byzantium. Gain the Tagma unique unit with Divine Right.",
-        leaderUniqueUnit: "Tagma"
+        leaderUniqueUnit: "Tagma",
+        dlcPack: 9
       },
       {
         civName: "Canada",
@@ -97,7 +115,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Ice Hockey Rink",
         leaderName: "Wilfrid Laurier",
         leaderBonus: "Can build Farms on Tundra tiles, and on Tundra Hills tiles with Civil Engineering. Snow, Snow Hills, Tundra Hills, and Tundra tiles cost 50% less Gold Gold to purchase. On those tiles, resources accumulate twice as fast, Mines and Lumber Mills receive +1 Production Production and Camps receive +1 Food Food.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "China",
@@ -106,7 +125,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Great Wall",
         leaderName: "Kublai Khan",
         leaderBonus: "Gain an additional Economic policy slot in all Governments. Gain a random Eureka Eureka and Inspiration Inspiration upon first establishing a Trading Post Trading Post in another major civilization's city.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 11
       },
       {
         civName: "China",
@@ -115,7 +135,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Great Wall",
         leaderName: "Qin Shi Huang",
         leaderBonus: "Builders receive an additional build charge. Can spend Builder charges to complete 15% of the Production Production cost for Ancient and Classical wonders. Unlocks Canals with Masonry instead of Steam Power",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Cree",
@@ -124,7 +145,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Mekewap",
         leaderName: "Poundmaker",
         leaderBonus: "All Alliance types provide Shared Visibility. Trade Routes Trade Routes grant +1 Food Food in the sending city and +1 Gold Gold in the destination city per Camp or Pasture at the destination city.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Netherlands",
@@ -133,7 +155,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Polder",
         leaderName: "Wilhelmina",
         leaderBonus: "Domestic Trade Routes Trade Routes provide +1 Loyalty per turn for the starting city. Trade Routes Trade Routes sent to or received from a foreign civilization grant +1 Culture Culture to the Netherlands.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Egypt",
@@ -142,7 +165,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "phinx",
         leaderName: "Cleopatra",
         leaderBonus: "International Trade Routes Trade Routes grant +4 Gold Gold. Trade Routes Trade Routes sent to Egypt from other civilizations provide +2 Food Food for them and +2 Gold Gold for Egypt. +100% Alliance Points from trading with allies.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "England",
@@ -151,7 +175,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Royal Navy Dockyard",
         leaderName: "Eleanor of Aquitaine",
         leaderBonus: "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "England",
@@ -160,7 +185,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Royal Navy Dockyard",
         leaderName: "Victoria",
         leaderBonus: "The first city founded on each continent other than England's home continent grants a free melee unit in that city and +1 Trade Routes Trade Route capacity. Building a Royal Navy Dockyard grants a free naval unit. Gain the Redcoat unique unit with Military Science.",
-        leaderUniqueUnit: "Redcoat"
+        leaderUniqueUnit: "Redcoat",
+        dlcPack: 0
       },
       {
         civName: "Ethiopia",
@@ -169,7 +195,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Rock-Hewn Church",
         leaderName: "Menelik II",
         leaderBonus: "Ethiopian cities founded on Hills receive Science Science and Culture Culture equal to 15% of their Faith Faith output. +4 Strength Combat Strength for all units when fighting on Hills.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 8
       },
       {
         civName: "France",
@@ -178,7 +205,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Château",
         leaderName: "Catherine de Medici (Black Queen)",
         leaderBonus: "+1 level of Visibility Diplomatic Visibility with every encountered civilization. Receives a free Spy (and extra Spy capacity) with Castles. All Spies start as Agents with a free promotion.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "France",
@@ -187,7 +215,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Château",
         leaderName: "Catherine de Medici (Magnificence)",
         leaderBonus: "+2 Culture Culture for improved Luxury resources adjacent to a Theater Square or Château. Cities with a Theater Square gain the unique Court Festival project, which grants Culture Culture and Tourism Tourism based on the number of Luxury resources France has.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "France",
@@ -196,7 +225,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Château",
         leaderName: "Eleanor of Aquitaine",
         leaderBonus: "Each Great Work in her cities causes foreign cities within 9 tiles to lose 1 Loyalty per turn. Any foreign city that leaves its civilization due to loss of Loyalty and is receiving the most Loyalty pressure from Eleanor instantly joins her empire, instead of becoming a Free City.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Gaul",
@@ -205,7 +235,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Oppidum",
         leaderName: "Ambiorix",
         leaderBonus: "Receive Culture Culture equal to 20% of the Production Production cost after training a non-civilian unit. Melee, ranged and anti-cavalry units receive +2 Strength Combat Strength for each adjacent military unit.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 9
       },
       {
         civName: "Georgia",
@@ -214,7 +245,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Tsikhe",
         leaderName: "Tamar",
         leaderBonus: "+100% Faith Faith for the next 10 turns after declaring a Protectorate War. Each Envoy Envoy sent to a city-state of Georgia's majority Religion counts as two Envoy Envoys",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Germany",
@@ -223,7 +255,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Hansa",
         leaderName: "Frederick Barbarossa",
         leaderBonus: "Gain an additional Military policy slot in all Governments. +7 Strength Combat Strength for all units when fighting city-states and their units",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Gran Colombia",
@@ -232,7 +265,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Hacienda",
         leaderName: "Simón Bolívar",
         leaderBonus: "Entering a new era grants a Comandante General, a unique type of Great Person Great Person.",
-        leaderUniqueUnit: "Comandante General"
+        leaderUniqueUnit: "Comandante General",
+        dlcPack: 7
       },
       {
         civName: "Greece",
@@ -241,7 +275,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Acropolis",
         leaderName: "Pericles",
         leaderBonus: "+5% Culture Culture per city-state Greece has Suzerainty over.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Greece",
@@ -250,7 +285,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Acropolis",
         leaderName: "Gorgo",
         leaderBonus: "Killing a unit provides Culture Culture equal to 50% of its Strength Combat Strength.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Hungary",
@@ -259,7 +295,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Thermal Bath",
         leaderName: "Matthias Corvinus",
         leaderBonus: "Levied city-state units gain +2 Moves Movement and +5 Strength Combat Strength, and can be upgraded at a 75% discount in Gold Gold and resources. Levying troops from a city-state grants 2 Envoy Envoys with that city-state. Gain the Black Army unique unit with Castles",
-        leaderUniqueUnit: "Black Army"
+        leaderUniqueUnit: "Black Army",
+        dlcPack: 0
       },
       {
         civName: "Inca",
@@ -268,7 +305,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Terrace Farm",
         leaderName: "Pachacuti",
         leaderBonus: "Domestic Trade Routes Trade Routes gain +1 Food Food for every Mountain tile in the origin city. Gain the Qhapaq Ñan unique improvement with Foreign Trade.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "India",
@@ -277,7 +315,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Stepwell",
         leaderName: "Gandhi",
         leaderBonus: "+5 Faith Faith for each met civilization (including India) that has founded a Religion and is not at war. Enemies receive double war weariness from fighting against Gandhi.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "India",
@@ -286,7 +325,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Stepwell",
         leaderName: "Chandragupta",
         leaderBonus: "Can declare a War of Territorial Expansion with Military Training, instead of Mobilization. +2 Moves Movement and +5 Strength Combat Strength for all units for the next 10 turns after declaring a War of Territorial Expansion.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Indonesia",
@@ -295,7 +335,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Kampung",
         leaderName: "Gitarja",
         leaderBonus: "May purchase naval units with Faith Faith. Religious units pay no movement cost to embark or disembark. City Centers adjacent to Coast or Lake tiles gain +2 Faith Faith.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 6
       },
       {
         civName: "Japan",
@@ -304,7 +345,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Electronics Factory",
         leaderName: "Hojo Tokimune",
         leaderBonus: "+5 Strength Combat Strength for land units in Coastal tiles and naval units in Coast tiles. Encampment, Holy Site and Theater Square districts are built in half the time. Districts, improvements and units are immune to damage from Hurricanes. +100% damage from Hurricanes in Japanese territory to civilizations at war with Japan.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Khmer",
@@ -313,7 +355,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Prasat",
         leaderName: "Jayavarman VII",
         leaderBonus: "+2 Food Food and +1 Housing Housing from Holy Sites adjacent to a river. Building a Holy Site triggers a Culture Bomb, claiming surrounding tiles.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 6
       },
       {
         civName: "Kongo",
@@ -322,7 +365,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Mbanza",
         leaderName: "Mvemba a Nzinga",
         leaderBonus: "May not build Holy Sites or found a religion, but receives all the beliefs of any religion that has established itself as Kongo's majority religion, not just the Follower beliefs. Building a Mbanza or Theater Square grants a free Apostle of the city's majority religion.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Korea",
@@ -331,7 +375,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Seowon",
         leaderName: "Seondeok",
         leaderBonus: "Cities with an established Governor receive +3% Culture Culture and +3% Science Science for each promotion that Governor has.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Macedon",
@@ -340,7 +385,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Basilikoi Paides",
         leaderName: "Alexander",
         leaderBonus: "Macedonian cities never incur war weariness. All military units heal completely when a city with a Wonder is captured. Gain the Hetairoi unique unit with Horseback Riding.",
-        leaderUniqueUnit: "Hetairoi"
+        leaderUniqueUnit: "Hetairoi",
+        dlcPack: 4
       },
       {
         civName: "Mali",
@@ -349,7 +395,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Suguba",
         leaderName: "Mansa Musa",
         leaderBonus: "International Trade Routes Trade Routes gain +1 Gold Gold for every flat Desert tile in the sending city. Entering a Golden Age permanently grants +1 Trade Routes Trade Route capacity.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Māori",
@@ -358,7 +405,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Marae",
         leaderName: "Kupe",
         leaderBonus: "Starts the game in the Ocean. +2 Science Science and +2 Culture Culture per turn before the first city is settled. The first settled city receives a free Builder and +1 Citizen Population. The Palace grants +3 Housing Housing and +1 Amenity Amenity.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Mapuche",
@@ -367,7 +415,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Chemamull",
         leaderName: "Lautaro",
         leaderBonus: "Defeating an enemy unit within the borders of an enemy city causes that city to lose 20 Loyalty. Pillaging a tile within the borders of an enemy city causes that city to lose 5 Loyalty.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Maya",
@@ -376,7 +425,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Observatory",
         leaderName: "Lady Six Sky",
         leaderBonus: "Non-capital cities gain +10% to all yields if within six tiles of the Mayan Capital Capital, and -15% to all yields if more than six tiles away. +5 Strength Combat Strength for all units within six tiles of the Mayan Capital Capital.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 7
       },
       {
         civName: "Mongolia",
@@ -385,7 +435,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Ordu",
         leaderName: "Genghis Khan",
         leaderBonus: "Cavalry class units gain +3 Strength Combat Strength and have a chance to capture defeated cavalry class enemy units.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Mongolia",
@@ -394,7 +445,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Ordu",
         leaderName: "Kublai Khan",
         leaderBonus: "Gain an additional Economic policy slot in all Governments. Gain a random Eureka Eureka and Inspiration Inspiration upon first establishing a Trading Post Trading Post in another major civilization's city.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 11
       },
       {
         civName: "Norway",
@@ -403,7 +455,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: " Stave Church",
         leaderName: "Harald Hardrada",
         leaderBonus: "+50% Production Production toward naval melee units. Naval melee units gain the ability to perform coastal raids. Pillaging and coastal raiding grant Science Science, in addition to Gold Gold, for Mines, and Culture Culture, in addition to Faith Faith, for Quarries, Pastures, Plantations, and Camps. Gain the Viking Longship unique unit with Sailing.",
-        leaderUniqueUnit: "Viking Longship"
+        leaderUniqueUnit: "Viking Longship",
+        dlcPack: 0
       },
       {
         civName: "Nubia",
@@ -412,7 +465,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Nubian Pyramid",
         leaderName: "Amanitore",
         leaderBonus: "+20% Production Production towards District Districts, increasing to +40% Production Production if there is a Nubian Pyramid adjacent to the City Center.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 5
       },
       {
         civName: "Ottoman",
@@ -421,7 +475,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Grand Bazaar",
         leaderName: "Suleiman",
         leaderBonus: "Have access to a unique Governor, Ibrahim, the Grand Vizier. Gain the Janissary unique unit with Gunpowder.",
-        leaderUniqueUnit: "Janissary"
+        leaderUniqueUnit: "Janissary",
+        dlcPack: 0
       },
       {
         civName: "Persia",
@@ -430,7 +485,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Pairidaeza",
         leaderName: "Cyrus",
         leaderBonus: "+2 Moves Movement for all units for the next 10 turns after declaring a Surprise War. Declaring a Surprise War only counts as a Formal War for the purpose of Grievances Grievances and war weariness. Occupied cities have no penalties to their yields. +5 Loyalty per turn in occupied cities with a garrisoned unit.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 4
       },
       {
         civName: "Phoenicia",
@@ -439,7 +495,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Cothon",
         leaderName: "Dido",
         leaderBonus: "Cities with a Cothon gain the unique Move Capital project, which moves the Phoenician Capital Capital capital to that city. Gains +1 Trade Routes Trade Route capacity after building the Government Plaza or any Government Plaza building. +50% Production Production towards District Districts in the city with the Government Plaza.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Poland",
@@ -448,7 +505,18 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Sukiennice",
         leaderName: "Jadwiga",
         leaderBonus: "Taking territory from a foreign city with a Culture Bomb converts it to Poland's religion. Relic Relics grant +4 Gold Gold, +2 Culture Culture and +2 Faith Faith. Holy Sites receive a +1 adjacency bonus from districts, instead of +0.5.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 2
+      },
+      {
+        civName: "Portugal",
+        civAbility: "International Trade Route Trade Routes can only be sent to cities on the coast or with a Harbor, but gain a +50% increase to all yields. Traders have +50% range over water, and can embark as soon as they are unlocked.",
+        civUniqueUnit: "Nau",
+        civUniqueInfrastructure: "Navigation School",
+        leaderName: "João III",
+        leaderBonus: "+1 Sight Sight for all units. Meeting another civilization grants +1 Trade Route Trade Route capacity. Gains Open Borders with all city-states.",
+        leaderUniqueUnit: "",
+        dlcPack: 12
       },
       {
         civName: "Rome",
@@ -457,7 +525,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Bath",
         leaderName: "Trajan",
         leaderBonus: "All founded cities start with a free building in the City Center. (A Monument if the game is started in the Ancient Era)",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Russia",
@@ -466,7 +535,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Lavra",
         leaderName: "Peter",
         leaderBonus: "Trade Routes to more advanced civilizations grant Russia +1 Science Science for every three technologies that civilization is ahead of them, and +1 Culture Culture for every three civics.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Scotland",
@@ -475,7 +545,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Golf Course",
         leaderName: "Robert the Bruce",
         leaderBonus: "Can declare a War of Liberation with Defensive Tactics, instead of Diplomatic Service. +100% Production Production in all cities and +2 Moves Movement for all units for the next 10 turns after declaring a War of Liberation.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Scythia",
@@ -484,7 +555,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Kurgan",
         leaderName: "Tomyris",
         leaderBonus: "+5 Strength Combat Strength for all units when attacking wounded units. Units heal up to 30 hit points after killing an enemy unit.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Spain",
@@ -493,7 +565,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Mission",
         leaderName: "Philip II",
         leaderBonus: "+4 Strength Combat Strength for all units when fighting civilizations following a different Religion. Inquisitors have one extra use of their Remove Heresy ability. Inquisitors eliminate 100% of the presence of other Religions.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Sumeria",
@@ -502,7 +575,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Ziggurat",
         leaderName: "Gilgamesh",
         leaderBonus: "May declare war on any civilization at war with an ally without warmonger penalties. When at war with a common enemy, Sumerian and allied units share pillage rewards and combat experience if within 5 tiles of each other. Earn Alliance Points per-turn if both civilizations are at war with the same foe. Heroes & Legends only: 25% Production Production increase when claiming Heroes, and Heroes have 20% more Lifespan.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       },
       {
         civName: "Sweden",
@@ -511,7 +585,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Open-Air Museum",
         leaderName: "Kristina",
         leaderBonus: "Buildings with at least three Great Work slots and wonders with at least two Great Work slots are automatically themed when all slots are filled. Gains the Queen's Bibliotheque unique building in the Government Plaza.",
-        leaderUniqueUnit: "Queen's Bibliotheque"
+        leaderUniqueUnit: "Queen's Bibliotheque",
+        dlcPack: 0
       },
       {
         civName: "Vietnam",
@@ -520,7 +595,8 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Thành",
         leaderName: "Bà Triệu",
         leaderBonus: "All units gain +5 Strength Combat Strength when fighting in Rainforest, Marsh, and Woods tiles, and +1 Movement Movement if they start their turn there. Both of these bonuses are doubled in tiles inside Vietnamese territory.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 11
       },
       {
         civName: "Zulu",
@@ -529,6 +605,7 @@ export const CivList: Array<Civ> = [
         civUniqueInfrastructure: "Ikanda",
         leaderName: "Shaka",
         leaderBonus: "May form Corps with Mercenaries, instead of Nationalism, and Armies with Nationalism, instead of Mobilization. Corps and Armies gain an additional +5 Strength Combat Strength.",
-        leaderUniqueUnit: ""
+        leaderUniqueUnit: "",
+        dlcPack: 0
       }
 ]
