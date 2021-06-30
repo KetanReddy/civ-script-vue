@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import Home from '@/views/Home.vue';
 import PlayerSetup from '@/views/steps/PlayerSetup.vue'
 import CivPicker from '@/views/steps/CivPicker.vue'
+import DeathPicker from  '@/views/steps/DeathPicker.vue'
+import FinalResults from  '@/views/steps/FinalResults.vue'
 import store from '@/store/index'
 
 const routes: Array<RouteRecordRaw> = [
@@ -22,6 +24,16 @@ const routes: Array<RouteRecordRaw> = [
         beforeEnter: () => {
           store.dispatch('rollCivs')
         }
+      },
+      {
+        path: '/death',
+        name: 'death',
+        component: DeathPicker
+      },
+      {
+        path: '/final',
+        name: 'final',
+        component: FinalResults
       },
     ]
   }

@@ -66,8 +66,9 @@ export default createStore<State>({
       })
     },
     makeDeathPick(state, targetPlayer){
+      // make sure death pick still follows DLC limits
       state.players = state.players.map(player => {
-        if (player.id ===  targetPlayer.id){
+        if (player.id ===  targetPlayer){
           const deathPick =  state.civPool.pop()
           if (deathPick === undefined){
             return player
