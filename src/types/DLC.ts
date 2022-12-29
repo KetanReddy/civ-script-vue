@@ -56,5 +56,9 @@ export const DLCs: Array<DLC>  = [
     {
         id: 12,
         displayName: "Portugal Pack"
+    },
+    {
+        id: 13,
+        displayName: "Leader Pass"
     }  
 ]

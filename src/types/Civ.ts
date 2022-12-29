@@ -49,14 +49,34 @@ export const CivList: Array<Civ> = [
         dlcPack: 0
       },
       {
+        civName: "America",
+        civAbility: "All Diplomatic policy slots in the current government are converted to Wildcard slots. +1 Diplomatic Favor Diplomatic Favor per turn for each Wildcard slot in the current government.",
+        civUniqueUnit: "P-51 Mustang",
+        civUniqueInfrastructure: "Film Studio",
+        leaderName: "Abraham Lincoln",
+        leaderBonus: "Industrial Zones grant +3 Loyalty per turn but Plantations give -2 Loyalty. Receive a free Melee unit after constructing Industrial Zones and their buildings. The free unit does not require resources when created or to maintain and receives +5 Strength Combat Strength",
+        leaderUniqueUnit: "",
+        dlcPack: 13
+      },
+      {
         civName: "Arabia",
         civAbility: "Automatically receives the final Great Prophet Great Prophet when the next-to-last one is claimed (unless one has already been earned through other means). +1 Science Science per foreign city following Arabia's Religion.",
         civUniqueUnit: "Mamluk",
         civUniqueInfrastructure: "Madrasa",
-        leaderName: "Saladin",
+        leaderName: "Saladin (Vizier)",
         leaderBonus: "The Worship building for Arabia's Religion is 90% cheaper to purchase with Faith Faith. Arabian cities with that building gain +10% Science Science, Faith Faith, and Culture Culture.",
         leaderUniqueUnit: "",
         dlcPack: 0
+      },
+      {
+        civName: "Arabia",
+        civAbility: "Automatically receives the final Great Prophet Great Prophet when the next-to-last one is claimed (unless one has already been earned through other means). +1 Science Science per foreign city following Arabia's Religion.",
+        civUniqueUnit: "Mamluk",
+        civUniqueInfrastructure: "Madrasa",
+        leaderName: "Saladin (Sultan)",
+        leaderBonus: "+100% Flanking and Support bonus to all Combat and Religious units.",
+        leaderUniqueUnit: "",
+        dlcPack: 13
       },
       {
         civName: "Australia",
@@ -349,6 +369,16 @@ export const CivList: Array<Civ> = [
         dlcPack: 0
       },
       {
+        civName: "Japan",
+        civAbility: "Districts receive a +1 adjacency bonus for each adjacent district, instead of +0.5.",
+        civUniqueUnit: "Samurai",
+        civUniqueInfrastructure: "Electronics Factory",
+        leaderName: "Tokugawa",
+        leaderBonus: "International Trade Route Trade Routes receive -25% yields and Tourism Tourism, but domestic Trade Route Trade Routes gain +1 Culture Culture, +1 Science Science, and +2 Gold Gold for every specialty district at the destination. Cities within 6 tiles of Japan's Capital Capital are 100% loyal and, after researching Flight, gain +1 Tourism Tourism for every specialty district.",
+        leaderUniqueUnit: "",
+        dlcPack: 13
+      },
+      {
         civName: "Khmer",
         civAbility: "+3 Faith Faith and +1 Amenity Amenity from Aqueducts. +2 Food Food for Farms adjacent to an Aqueduct.",
         civUniqueUnit: "Domrey",
@@ -367,6 +397,16 @@ export const CivList: Array<Civ> = [
         leaderBonus: "May not build Holy Sites or found a religion, but receives all the beliefs of any religion that has established itself as Kongo's majority religion, not just the Follower beliefs. Building a Mbanza or Theater Square grants a free Apostle of the city's majority religion.",
         leaderUniqueUnit: "",
         dlcPack: 0
+      },
+      {
+        civName: "Kongo",
+        civAbility: "Relic Relics, Artifact Artifacts and Sculpture Sculptures grant +2 Food Food, +2 Production Production and +4 Gold Gold. The Palace has four extra slots for Great Works. +50% Great Writer Great Writer, Great Artist Great Artist, Great Musician Great Musician, and Great Merchant Great Merchant points gained from all sources.",
+        civUniqueUnit: "Ngao Mbeba",
+        civUniqueInfrastructure: "Mbanza",
+        leaderName: "Nzinga Mbande",
+        leaderBonus: "Cities on the same continent as the Capital Capital (including the Capital Capital) receive +10% to all yields, while cities on another continent receive -15% to all yields.",
+        leaderUniqueUnit: "",
+        dlcPack: 13
       },
       {
         civName: "Korea",
@@ -473,10 +513,20 @@ export const CivList: Array<Civ> = [
         civAbility: "+50% Production Production toward Siege units. Siege units gain +5 Strength Combat Strength against defensible District Districts. Conquering a city doesn't cause that city to lose Citizen Population. +1 Amenity Amenity and +4 Loyalty per turn for cities not founded by the Ottomans.",
         civUniqueUnit: "Barbary Corsair",
         civUniqueInfrastructure: "Grand Bazaar",
-        leaderName: "Suleiman",
+        leaderName: "Suleiman (Kanuni)",
         leaderBonus: "Have access to a unique Governor, Ibrahim, the Grand Vizier. Gain the Janissary unique unit with Gunpowder.",
         leaderUniqueUnit: "Janissary",
         dlcPack: 0
+      },
+      {
+        civName: "Ottoman",
+        civAbility: "+50% Production Production toward Siege units. Siege units gain +5 Strength Combat Strength against defensible District Districts. Conquering a city doesn't cause that city to lose Citizen Population. +1 Amenity Amenity and +4 Loyalty per turn for cities not founded by the Ottomans.",
+        civUniqueUnit: "Barbary Corsair",
+        civUniqueInfrastructure: "Grand Bazaar",
+        leaderName: "Suleiman (Muhteşem)",
+        leaderBonus: "+15% Science Science and Culture Culture when in a Golden Age Golden Age or Heroic Age Heroic Age. +4 Strength Combat Strength when not in a Golden Age Golden Age or Heroic Age Heroic Age against Civilizations who are also not in a Golden Age Golden Age or Heroic Age Heroic Age.",
+        leaderUniqueUnit: "",
+        dlcPack: 13
       },
       {
         civName: "Persia",
@@ -487,6 +537,16 @@ export const CivList: Array<Civ> = [
         leaderBonus: "+2 Moves Movement for all units for the next 10 turns after declaring a Surprise War. Declaring a Surprise War only counts as a Formal War for the purpose of Grievances Grievances and war weariness. Occupied cities have no penalties to their yields. +5 Loyalty per turn in occupied cities with a garrisoned unit.",
         leaderUniqueUnit: "",
         dlcPack: 4
+      },
+      {
+        civName: "Persia",
+        civAbility: "Gains +1 Trade Routes Trade Route capacity with Political Philosophy. Domestic Trade Routes Trade Routes provide +2 Gold Gold and +1 Culture Culture. Roads built inside Persian territory are one level more advanced than usual.",
+        civUniqueUnit: "Immortal",
+        civUniqueInfrastructure: "Pairidaeza",
+        leaderName: "Nader Shah",
+        leaderBonus: "+5 Strength Combat Strength for all units when attacking full health units. Cities not founded by Nader Shah gain +2 Faith Faith and +3 Gold Gold on domestic Trade Route Trade Routes.",
+        leaderUniqueUnit: "",
+        dlcPack: 13
       },
       {
         civName: "Phoenicia",
