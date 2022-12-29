@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/civ-script-vue/precache-manifest.347d7c1fa8270c23ecdaa4a6e3bfd3ea.js"
+  "/civ-script-vue/precache-manifest.94cf234574cc5465444a782add216fb1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-civ-picker"});

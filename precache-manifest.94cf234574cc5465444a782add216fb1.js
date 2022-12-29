@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1838ad272cb4bf073ad",
-    "url": "/civ-script-vue/css/app.2c6e5ac4.css"
+    "revision": "3d2b5133bf2028513fa6",
+    "url": "/civ-script-vue/css/app.dbe0b0e2.css"
   },
   {
-    "revision": "ebd752fa58c837d87bcb3f1e84646443",
+    "revision": "468f515dedc2edd4c75fa7138a11dfb6",
     "url": "/civ-script-vue/index.html"
   },
   {
-    "revision": "c1838ad272cb4bf073ad",
-    "url": "/civ-script-vue/js/app.7a765b9a.js"
+    "revision": "3d2b5133bf2028513fa6",
+    "url": "/civ-script-vue/js/app.cc5a03c0.js"
   },
   {
-    "revision": "bac80f3bd24863912c4c",
-    "url": "/civ-script-vue/js/chunk-vendors.5c297f35.js"
+    "revision": "f309c7fb3a1536bb8aea",
+    "url": "/civ-script-vue/js/chunk-vendors.fbdf2695.js"
   },
   {
     "revision": "59710c9e29496b38ed8a9953b0f13841",
